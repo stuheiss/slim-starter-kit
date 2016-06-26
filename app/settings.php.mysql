@@ -34,9 +34,9 @@ return [
         
         // ORM settings
         'eloquent' => [
-            'driver' => 'sqlite',
+            'driver' => 'mysql',
             'host' => 'localhost',
-            'database' => '../db/slim_starter.sqlite',
+            'database' => 'slim_starter',
             'username' => 'root',
             'password' => '',
             'charset' => 'utf8',

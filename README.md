@@ -16,3 +16,16 @@ Replace `[my-app-name]` with the desired directory name for your new application
 * Ensure `var/` is web writeable.
 
 That's it! Now go build something cool.
+
+## Test with PHP server ##
+
+1. php -S localhost:8080 -t public
+2. open http://localhost:8080/
+
+## Use SQLite3 ##
+
+To use sqlite3 rather than MySQL and seed the sqlite database, do the following:
+
+1. cp app/settings.php.sqlite3 app/settings.php
+2. mkdir db
+3. sqlite3 db/slim_starter.sqlite < slim_starter.sqlite.txt
